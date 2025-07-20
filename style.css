@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  background: #fffdf7;
+  color: #333;
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+.entry {
+  border-left: 4px solid #ffa;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.date {
+  color: #888;
+  font-size: 0.9em;
+}
