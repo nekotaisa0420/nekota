@@ -1,0 +1,5 @@
+.hidden-link {
+  color: inherit;       /* 他の文字と同じ色 */
+  text-decoration: none;/* 下線を消す */
+  cursor: pointer;      /* マウスカーソルをリンクっぽくする（任意） */
+}
