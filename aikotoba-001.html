@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ひみつのページ</title>
+  <style>
+    #secret-content {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+    }
+  </style>
+</head>
+<body>
+
+<h1>合言葉の間</h1>
+<p>パスワードを入力してください：</p>
+
+<input type="password" id="password" placeholder="ここにパスワードを入力">
+<button onclick="checkPassword()">送信</button>
+
+<div id="secret-content">
+  <h2>ようこそ！</h2>
+  <p>もふもふの森</p>
+</div>
+
+<script>
+  function checkPassword() {
+    const correctPassword = "nekotaisa"; // ← 合言葉をここに設定！
+    const input = document.getElementById("password").value;
+
+    if (input === correctPassword) {
+      document.getElementById("secret-content").style.display = "block";
+    } else {
+      alert("合言葉が違います！");
+    }
+  }
+</script>
+
+</body>
+</html>
